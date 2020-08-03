@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+
+  quick_shopping_sanic:
+    restart: always
+    build: ../
+    ports:
+      - 8923:8000
+    volumes:
+      - ../src:/opt/app
+      - ../docs:/opt/docs
+    environment:
+      STAGE: docker_compose
+    command: sleep 999999999
+
+  cassandra:
+    restart: always
+    image: cassandra:3.11
+    ports:
+      - 9042:9042
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
