@@ -24,14 +24,14 @@ CODE_RECORD_TTL = 3 * 60
 CASSANDRA_NODES = ['cassandra']
 CASSANDRA_REPLICATION_FACTOR = 1
 
-CASSANDRA_KEYSPACE = 'issue_feedback_sanic'
+CASSANDRA_KEYSPACE = 'quick_shopping_sanic'
 
 # rabbitmq
 RABBITMQ_HOSTNAME = 'rabbitmq'
 RABBITMQ_PORT = 5672
-RABBITMQ_EXCHANGE = 'issue_feedback'
-RABBITMQ_QUEUE = 'issue_feedback'
-RABBITMQ_ROUTING_KEY = 'issue_feedback'
+RABBITMQ_EXCHANGE = 'quick_shopping'
+RABBITMQ_QUEUE = 'quick_shopping'
+RABBITMQ_ROUTING_KEY = 'quick_shopping'
 
 # role
 ROLE_USER = 'USER'
@@ -42,7 +42,7 @@ ROLE_MANAGER = 'MANAGER'
 ROLES = [ROLE_USER, ROLE_DEVELOPER, ROLE_MANAGER]
 
 # RPC hostname
-CREATE_PROFILE_URL = 'http://issue_feedback_sanic:8000/v1/profile'
+CREATE_PROFILE_URL = 'http://quick_shopping:8000/v1/profile'
 
 # email config
 EMAIL_ADDRESS = ''
