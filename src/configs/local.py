@@ -18,3 +18,4 @@ RABBITMQ_PORT = 5672
 RABBITMQ_EXCHANGE = 'quick_shopping'
 RABBITMQ_QUEUE = 'quick_shopping'
 RABBITMQ_ROUTING_KEY = 'quick_shopping'
+

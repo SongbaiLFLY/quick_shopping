@@ -63,6 +63,8 @@ async def jwt_middleware(request: Request, required: bool, role_ids):
         return failed_response(error_message='没有权限',
                                error_type='permission_denied')
 
+    request['jwt_payload'] = payload
+
 
 def jwt_wrapper(view, required=False, role_ids=()):
     """sanic 的 middleware 是全局的, 这个函数方便局部使用
@@ -70,7 +72,6 @@ def jwt_wrapper(view, required=False, role_ids=()):
     blueprint.add_route(jwt_wrapper(CreateView.as_view()),
                         '/jwt_example',
                         methods=['POST'])
-
     :param required: True 为接受任何合法身份的 token
     :param role_ids: 指定合法身份
     """

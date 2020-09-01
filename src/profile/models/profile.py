@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from cassdran.cqlenigne import columns
+from cassandra.cqlengine import columns
 
 from app import app
-from libs.aiocqlengine import AioModel
+from libs.aiocqlengine.models import AioModel
 
 
 class Profile(AioModel):
