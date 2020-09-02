@@ -14,7 +14,7 @@
 {
   "ok": true,
   "result": {
-    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiIwMTc1MTMiLCJleHAiOjE1OTg5NjAwMDN9.6TVq3R4DVCdVdb_-Y88XyCh-KMA5z0ROxUCXjCxPySI"
+    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiIyOTY0ODYiLCJleHAiOjE1OTkwNDI1ODh9.kYH7VgjYY3RtYEdIwp3LtXxwhm8o-nN_ujIXHLQAR_c"
   }
 }
 ```
@@ -71,8 +71,8 @@
   "ok": true,
   "result": {
     "role_id": "USER",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMThlYzZmOGEtNTBmMi00OTZlLWI2NTEtYzUyMWI4MDg4NDI4Iiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkxMzI2MzR9.R98p1B3YN00ukEueQ3vTV0KXbXe9Luse9NL8POYVWro",
-    "user_id": "18ec6f8a-50f2-496e-b651-c521b8088428"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMzU2ZGJmZWUtMDYxYi00YjEzLWE2YjEtZWE5MWY2MmQzMzUzIiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkyMTUyMTl9.CAN4Y-zXGUvIIcCDVgCvp3oY_5DfnL27Ia7d_oZ49qA",
+    "user_id": "356dbfee-061b-4b13-a6b1-ea91f62d3353"
   }
 }
 ```
@@ -103,12 +103,12 @@
 {
   "ok": true,
   "result": {
-    "created_at": "2020-09-01T11:30:21.391147",
+    "created_at": "2020-09-02T10:26:45.615525",
     "description": "产品1的介绍",
-    "manager_id": "71d21f79-9114-47da-8da9-6e717a6e9d6c",
+    "manager_id": "bc7bf2d6-2292-4511-ae6a-53a2d8ac2afa",
     "name": "产品1",
     "price": 1.1,
-    "product_id": "eba1007e-acd3-4741-8437-e1768f6e8890"
+    "product_id": "85710367-56ad-48e1-ade1-7ba5cdc2d97a"
   }
 }
 ```
@@ -129,12 +129,12 @@
   "result": {
     "products": [
       {
-        "created_at": "2020-09-01T11:30:21.391000",
+        "created_at": "2020-09-02T10:26:45.615000",
         "description": "4",
-        "manager_id": "371d460e-9d89-4fbc-9744-d8c32ed44f23",
+        "manager_id": "87859102-2a1a-4943-b037-51e187ccb170",
         "name": "4",
         "price": 1.100000023841858,
-        "product_id": "5d861bf7-7a3b-424f-96ba-9c1e33b24567"
+        "product_id": "24687165-a2d9-423b-87c3-3ea617e752e3"
       }
     ]
   }
@@ -150,6 +150,7 @@
 | method | `POST` | - |
 | body | `user_id(必填)` | 用户id |
 | body | `nickname(必填)` | 用户昵称 |
+| body | `role_id` | 角色id |
 
 正确响应: 
 ```json
@@ -174,7 +175,7 @@
   "result": {
     "nickname": "tester",
     "role_id": "USER",
-    "user_id": "c40fd12d-2008-4329-b463-f750553e9a6c"
+    "user_id": "0837ebba-7ede-4554-bd2d-2d275e11eb0f"
   }
 }
 ```

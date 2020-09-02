@@ -21,6 +21,7 @@ class TestProfileApi:
               body={
                   'user_id(必填)': '用户id',
                   'nickname(必填)': '用户昵称',
+                  'role_id': '角色id'
               })
     async def test_create_profile(self, client):
         url = '/v1/profile'
@@ -30,12 +31,14 @@ class TestProfileApi:
                                      json={
                                          'user_id': user_id,
                                          'nickname': 'tester',
+                                         'role_id': 'MANAGER'
                                      })
 
         assert response.status == 200
 
         json_result = await response.json()
         assert json_result['ok']
+
         return {'正确响应': json_result}
 
     @api_docs(title='获取个人资料', path='/v1/profile/{user_id}', method='GET')
