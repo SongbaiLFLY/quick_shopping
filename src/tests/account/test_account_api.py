@@ -1,3 +1,4 @@
+import uuid
 from tests.docs import api_docs
 
 

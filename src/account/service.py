@@ -131,3 +131,5 @@ class GetRoleIdService(GetView):
                 user_id=self.validated_data['user_id'])
         except Account.DoesNotExist:
             raise AccountNotFound
+
+

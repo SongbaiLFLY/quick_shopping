@@ -26,7 +26,7 @@ service_urls = [
     ('/account', service.CreateAccountService.as_view(), ['POST']),
     ('/account/send_code', service.SendCodeService.as_view(), ['POST']),
     ('/login', service.LoginService.as_view(), ['POST']),
-    ('/account/<user_id>/role', service.GetRoleIdService.as_view(), ['GET'])
+    ('/account/<user_id>/role', service.GetRoleIdService.as_view(), ['GET']),
 ]
 account_service_blueprint = Blueprint('account_service',
                                       url_prefix='/service/v1')
