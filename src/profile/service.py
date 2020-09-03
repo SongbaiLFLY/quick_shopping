@@ -61,23 +61,6 @@ class UpdateProfileService(PutView):
         return profile
 
 
-class UpdateProfileService(PutView):
-    """更新用户 profile"""
-    args_deserializer_class = UpdateProfileSerializer
-    put_serializer_class = ProfileSerializer
-
-    async def save(self):
-        try:
-            profile = await Profile.async_get(
-                user_id=self.validated_data['user_id'])
-        except Profile.DoesNotExist:
-            raise ProfileNotFound
-
-        await profile.update_profile(**self.validated_data)
-
-        return profile
-
-
 class GetAllManagerService(ListView):
     args_deserializer_class = None
     list_serializer_class = ManagerIdSerializer

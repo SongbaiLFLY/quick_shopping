@@ -21,7 +21,7 @@ class CreateProductService(PostView):
             return await Product.new(
                 manager_id=self.validated_data['manager_id'],
                 name=name,
-                price=format(self.validated_data['price'], '.1f'),
+                price=self.validated_data['price'],
                 description=self.validated_data['description'])
 
         raise ProductAlreadyExist

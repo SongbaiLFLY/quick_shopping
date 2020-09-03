@@ -49,11 +49,12 @@ class TestProfileApi:
     async def test_get_profile(self, client):
         user_id = str(uuid.uuid4())
         # 创建 profile
-        await client.post('/service/v1/profile',
+        await client.post('/v1/profile',
                           json={
                               'user_id': user_id,
                               'nickname': 'tester',
-                              'gender': 0
+                              'gender': 0,
+                              'role_id': 'MANAGER'
                           })
 
         response = await client.get(f'/v1/profile/{user_id}')
@@ -67,6 +68,7 @@ class TestProfileApi:
         assert profile['nickname'] == 'tester'
         assert profile['gender'] == 0
         assert profile['avatar'] == ''
+        assert profile['role_id'] == 'MANAGER'
         return {'正确响应': json_result}
 
     @api_docs(title='更新个人资料',
@@ -121,31 +123,28 @@ class TestProfileApi:
         return {'正确响应': json_result1}
 
     @api_docs(title='获取所有商家',
-              path='/v1/profile/manager',
+              path='/v1/profile/user/manager',
               method='GET',
               body={})
     async def test_query_managers(self, client):
-        account_id = '123456789@qq.com'
-        password = '123456789@qq.com'
-        response = await client.post('/service/v1/account/send_code',
-                                     json={'account_id': account_id})
+        url = '/v1/profile'
+
+        user_id = str(uuid.uuid4())
+        response = await client.post(url,
+                                     json={
+                                         'user_id': user_id,
+                                         'nickname': 'tester',
+                                         'gender': 0,
+                                         'role_id': 'MANAGER'
+                                     })
 
         assert response.status == 200
         json_result = await response.json()
-        validate_token = json_result['result']['validate_token']
-        validate_code = json_result['result']['validate_code']
-        # 创建账号
-        response1 = await client.post('/service/v1/account',
-                                      json={
-                                         'account_id': account_id,
-                                         'password': password,
-                                         'role_id': 'MANAGER',
-                                         'validate_token': validate_token,
-                                         'validate_code': validate_code
-                                      })
-        assert response1.status == 200
-
-        response2 = await client.get('/v1/profile/manager')
+        assert json_result['ok']
+        response1 = await client.get(f'/v1/profile/{user_id}')
+        json_result1 = await response1.json()
+        print(json_result1)
+        response2 = await client.get('/v1/profile/user/manager')
         assert response2.status == 200
         json_result2 = await response2.json()
         print(json_result2)

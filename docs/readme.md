@@ -14,7 +14,7 @@
 {
   "ok": true,
   "result": {
-    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiI4NzYzMzkiLCJleHAiOjE1OTkwNTcxMTJ9.HOsbRZC7wfxG9jqF_1LWmKmMJ2Ba2V9SIJ-rANzkEBs"
+    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiIzNDE3MjkiLCJleHAiOjE1OTkxMzAxMzl9.rwlfb-pm7OYg-Njvnj6RdYcW5Sgc7JqlmkKQHcxgdIg"
   }
 }
 ```
@@ -71,8 +71,8 @@
   "ok": true,
   "result": {
     "role_id": "USER",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMmIzNTg0M2YtNThiOC00OWEwLWE5OWItYTEyNDZjNWU1MmU4Iiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkyMjk3NDR9.4iB2veJ4beyyzddg5nPVtObWaxq1rnR6dNHpAu1moiY",
-    "user_id": "2b35843f-58b8-49a0-a99b-a1246c5e52e8"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZWVkZjc5MmYtYmNhZi00Y2QyLWEzNmItZDQ5N2I4YWNjZTBjIiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkzMDI3NzB9.UR34GvMjb7nuELVZSPf3CL5SSgaz_ppj2uQooYInxic",
+    "user_id": "eedf792f-bcaf-4cd2-a36b-d497b8acce0c"
   }
 }
 ```
@@ -103,12 +103,12 @@
 {
   "ok": true,
   "result": {
-    "created_at": "2020-09-02T14:28:50.242914",
+    "created_at": "2020-09-03T10:45:56.664702",
     "description": "产品1的介绍",
-    "manager_id": "85e23039-73e8-4da3-940e-0559ae88ff4a",
+    "manager_id": "22108203-9a62-4c35-860f-9d20b49abdc3",
     "name": "产品1",
     "price": 1.1,
-    "product_id": "4e296bdd-867a-4d79-a2b2-e68b4b225a44"
+    "product_id": "4dbd290a-ddef-41e1-bbf2-08c4845837e2"
   }
 }
 ```
@@ -129,12 +129,12 @@
   "result": {
     "products": [
       {
-        "created_at": "2020-09-02T14:28:50.242000",
+        "created_at": "2020-09-03T10:45:56.664000",
         "description": "4",
-        "manager_id": "4c78c8e0-ed2f-4d50-bcf7-4033b8a0ef7f",
+        "manager_id": "992bfcb9-ce3c-4cc0-b453-084fb4025ac5",
         "name": "4",
         "price": 1.100000023841858,
-        "product_id": "685b4d73-c698-4db6-8c84-0dcdc1c9eda1"
+        "product_id": "7454c854-1117-4129-a7ff-96b77ab282a1"
       }
     ]
   }
@@ -177,8 +177,8 @@
     "avatar": "",
     "gender": 0,
     "nickname": "tester",
-    "role_id": "USER",
-    "user_id": "cf90890f-2e76-4d84-9251-c75e7d00bddd"
+    "role_id": "MANAGER",
+    "user_id": "4cd8eb35-afb0-4ad8-a9a7-c4e2d6390251"
   }
 }
 ```
@@ -208,7 +208,7 @@
 
 | 方法名 | 参数 | 描述 |
 | --- | --- | --- |
-| path | `/v1/profile/manager` | - |
+| path | `/v1/profile/user/manager` | - |
 | method | `GET` | - |
 
 正确响应: 
@@ -216,7 +216,9 @@
 {
   "ok": true,
   "result": {
-    "managers": []
+    "managers": [
+      {}
+    ]
   }
 }
 ```
