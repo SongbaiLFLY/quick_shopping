@@ -141,9 +141,9 @@ class TestProfileApi:
         assert response.status == 200
         json_result = await response.json()
         assert json_result['ok']
+
         response1 = await client.get(f'/v1/profile/{user_id}')
-        json_result1 = await response1.json()
-        print(json_result1)
+        assert response1.status == 200
         response2 = await client.get('/v1/profile/user/manager')
         assert response2.status == 200
         json_result2 = await response2.json()

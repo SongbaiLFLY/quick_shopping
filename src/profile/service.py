@@ -63,7 +63,7 @@ class UpdateProfileService(PutView):
 
 class GetAllManagerService(ListView):
     args_deserializer_class = None
-    list_serializer_class = ManagerIdSerializer
+    list_serializer_class = ProfileSerializer
     list_result_name = 'managers'
 
     async def filter_objects(self):

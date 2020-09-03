@@ -14,7 +14,7 @@
 {
   "ok": true,
   "result": {
-    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiIzNDE3MjkiLCJleHAiOjE1OTkxMzAxMzl9.rwlfb-pm7OYg-Njvnj6RdYcW5Sgc7JqlmkKQHcxgdIg"
+    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiI0NTYzMzkiLCJleHAiOjE1OTkxMzA1Mjh9.i9sqP10YDGYLW4-QFkfjk5QaiUbNcw4KIPMiC3mQY7w"
   }
 }
 ```
@@ -71,8 +71,8 @@
   "ok": true,
   "result": {
     "role_id": "USER",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZWVkZjc5MmYtYmNhZi00Y2QyLWEzNmItZDQ5N2I4YWNjZTBjIiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkzMDI3NzB9.UR34GvMjb7nuELVZSPf3CL5SSgaz_ppj2uQooYInxic",
-    "user_id": "eedf792f-bcaf-4cd2-a36b-d497b8acce0c"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYTc2NmM2MzItMGIzMy00NjcwLWIwZGEtMWM1ZjJhMjEyNGI4Iiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkzMDMxNTl9.5JROy-gaKY6TDtm8mLIJZO7WMevD1Ovsj8Ad6DGeuIw",
+    "user_id": "a766c632-0b33-4670-b0da-1c5f2a2124b8"
   }
 }
 ```
@@ -103,12 +103,12 @@
 {
   "ok": true,
   "result": {
-    "created_at": "2020-09-03T10:45:56.664702",
+    "created_at": "2020-09-03T10:52:25.822320",
     "description": "产品1的介绍",
-    "manager_id": "22108203-9a62-4c35-860f-9d20b49abdc3",
+    "manager_id": "e30c4c81-bf7f-474d-bd67-1d36a62340a9",
     "name": "产品1",
     "price": 1.1,
-    "product_id": "4dbd290a-ddef-41e1-bbf2-08c4845837e2"
+    "product_id": "4f2ebb8c-e060-4f00-8e44-763e30846717"
   }
 }
 ```
@@ -129,12 +129,12 @@
   "result": {
     "products": [
       {
-        "created_at": "2020-09-03T10:45:56.664000",
+        "created_at": "2020-09-03T10:52:25.822000",
         "description": "4",
-        "manager_id": "992bfcb9-ce3c-4cc0-b453-084fb4025ac5",
+        "manager_id": "2ccdcfe9-9f5e-4bf0-8830-4b0a0b79791c",
         "name": "4",
         "price": 1.100000023841858,
-        "product_id": "7454c854-1117-4129-a7ff-96b77ab282a1"
+        "product_id": "cae99c90-6ad0-4e8d-9289-b6e8056733c4"
       }
     ]
   }
@@ -178,7 +178,7 @@
     "gender": 0,
     "nickname": "tester",
     "role_id": "MANAGER",
-    "user_id": "4cd8eb35-afb0-4ad8-a9a7-c4e2d6390251"
+    "user_id": "a5f16be9-ae36-4380-aff0-b882648736b2"
   }
 }
 ```
@@ -217,7 +217,13 @@
   "ok": true,
   "result": {
     "managers": [
-      {}
+      {
+        "avatar": "",
+        "gender": 0,
+        "nickname": "tester",
+        "role_id": "MANAGER",
+        "user_id": "ddab74cc-f3aa-48b4-b6b7-30ffed604e13"
+      }
     ]
   }
 }
