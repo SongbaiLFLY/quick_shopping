@@ -15,33 +15,45 @@ class ProfileService:
 
 
 class TestProfileService:
-    async def test_create_profile(self, client):
-        url = '/service/v1/profile'
+    async def test_get_profile(self, client):
+        account_id = '123456789@qq.com'
+        # 获取验证码
+        response = await client.post('/service/v1/account/send_code',
+                                     json={'account_id': account_id})
+        assert response.status == 200
+        json_result = await response.json()
+        validate_token = json_result['result']['validate_token']
+        validate_code = json_result['result']['validate_code']
 
-        user_id = str(uuid.uuid4())
+        url = '/v1/account'
+        response = await client.post(url,
+                                     json={
+                                         'account_id': account_id,
+                                         'password': '123456789@qq.com',
+                                         'validate_token': validate_token,
+                                         'validate_code': validate_code,
+                                     })
+        assert response.status == 200
+        response = await client.post('/v1/login',
+                                     json={
+                                         'account_id': '123456789@qq.com',
+                                         'password': '123456789@qq.com'
+                                     })
+        assert response.status == 200
+        json_result = await response.json()
+        user_id = json_result['result']['user_id']
+        # 创建
+        url = '/v1/profile'
         response = await client.post(url,
                                      json={
                                          'user_id': user_id,
                                          'nickname': 'tester',
+                                         'gender': 1,
+                                         'role_id': 'MANAGER'
                                      })
 
         assert response.status == 200
-
-        json_result = await response.json()
         assert json_result['ok']
-
-        assert json_result['result']['user_id'] == user_id
-        assert json_result['result']['nickname'] == 'tester'
-
-    async def test_get_profile(self, client):
-        user_id = str(uuid.uuid4())
-        # 创建 profile
-        await client.post('/service/v1/profile',
-                          json={
-                              'user_id': user_id,
-                              'nickname': 'tester',
-                          })
-
         response = await client.get(f'/service/v1/profile/{user_id}')
         assert response.status == 200
 
@@ -53,14 +65,44 @@ class TestProfileService:
         assert profile['nickname'] == 'tester'
 
     async def test_update_profile(self, client):
-        user_id = str(uuid.uuid4())
-        # 创建 profile
-        await client.post('/service/v1/profile',
-                          json={
-                              'user_id': user_id,
-                              'nickname': 'tester',
-                          })
+        account_id = '123456789@qq.com'
+        # 获取验证码
+        response = await client.post('/service/v1/account/send_code',
+                                     json={'account_id': account_id})
+        assert response.status == 200
+        json_result = await response.json()
+        validate_token = json_result['result']['validate_token']
+        validate_code = json_result['result']['validate_code']
 
+        url = '/v1/account'
+        response = await client.post(url,
+                                     json={
+                                         'account_id': account_id,
+                                         'password': '123456789@qq.com',
+                                         'validate_token': validate_token,
+                                         'validate_code': validate_code,
+                                     })
+        assert response.status == 200
+        response = await client.post('/v1/login',
+                                     json={
+                                         'account_id': '123456789@qq.com',
+                                         'password': '123456789@qq.com'
+                                     })
+        assert response.status == 200
+        json_result = await response.json()
+        user_id = json_result['result']['user_id']
+        # 创建
+        url = '/v1/profile'
+        response = await client.post(url,
+                                     json={
+                                         'user_id': user_id,
+                                         'nickname': 'tester',
+                                         'gender': 1,
+                                         'role_id': 'MANAGER'
+                                     })
+
+        assert response.status == 200
+        assert json_result['ok']
         # 查询
         response = await client.get(f'/service/v1/profile/{user_id}')
         assert response.status == 200

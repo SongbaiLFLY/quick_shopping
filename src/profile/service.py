@@ -1,5 +1,6 @@
 from profile.exceptions import ProfileAlreadyExist, ProfileNotFound
 from profile.models.profile import Profile
+from account.models.account import Account
 from profile.models.serializers import (CreateProfileSerializer,
                                         ProfileSerializer,
                                         UpdateProfileSerializer,
@@ -17,6 +18,8 @@ class CreateProfileService(PostView):
 
     async def save(self):
         user_id = self.validated_data['user_id']
+        account = await Account.async_get(user_id=user_id)
+        await account.async_update(role_id=self.validated_data['role_id'])
         try:
             await Profile.async_get(user_id=user_id)
         except Profile.DoesNotExist:

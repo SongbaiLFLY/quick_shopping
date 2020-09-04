@@ -14,7 +14,7 @@
 {
   "ok": true,
   "result": {
-    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiI0NTYzMzkiLCJleHAiOjE1OTkxMzA1Mjh9.i9sqP10YDGYLW4-QFkfjk5QaiUbNcw4KIPMiC3mQY7w"
+    "validate_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiMTIzNDU2QHFxLmNvbSIsInZhbGlkYXRlX2NvZGUiOiIwMzc4ODkiLCJleHAiOjE1OTkyMzI3NTJ9.uQjeq0vr7VbFL4acYbGheJS7DWqabgwWDL0llSKWoGw"
   }
 }
 ```
@@ -71,8 +71,8 @@
   "ok": true,
   "result": {
     "role_id": "USER",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYTc2NmM2MzItMGIzMy00NjcwLWIwZGEtMWM1ZjJhMjEyNGI4Iiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTkzMDMxNTl9.5JROy-gaKY6TDtm8mLIJZO7WMevD1Ovsj8Ad6DGeuIw",
-    "user_id": "a766c632-0b33-4670-b0da-1c5f2a2124b8"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMWE5NWZkNmEtYWUxMS00MmM2LTlkMjYtMDk5NmUwZjcwZDUzIiwicm9sZV9pZCI6IlVTRVIiLCJleHAiOjE1OTk0MDUzODN9.J4McdAow5PTD8oVUa3EmZ7oC0v_5Pqz1zANVCwuU1OI",
+    "user_id": "1a95fd6a-ae11-42c6-9d26-0996e0f70d53"
   }
 }
 ```
@@ -103,12 +103,12 @@
 {
   "ok": true,
   "result": {
-    "created_at": "2020-09-03T10:52:25.822320",
+    "created_at": "2020-09-04T15:16:09.817799",
     "description": "产品1的介绍",
-    "manager_id": "e30c4c81-bf7f-474d-bd67-1d36a62340a9",
+    "manager_id": "51750507-ea50-4005-9290-6cbcf8b5849e",
     "name": "产品1",
     "price": 1.1,
-    "product_id": "4f2ebb8c-e060-4f00-8e44-763e30846717"
+    "product_id": "7d4c0b84-cab3-4048-9ad9-bc1aec0ebf89"
   }
 }
 ```
@@ -129,12 +129,12 @@
   "result": {
     "products": [
       {
-        "created_at": "2020-09-03T10:52:25.822000",
+        "created_at": "2020-09-04T15:16:09.817000",
         "description": "4",
-        "manager_id": "2ccdcfe9-9f5e-4bf0-8830-4b0a0b79791c",
+        "manager_id": "7523243d-46e5-4fc3-843c-09bba2039225",
         "name": "4",
         "price": 1.100000023841858,
-        "product_id": "cae99c90-6ad0-4e8d-9289-b6e8056733c4"
+        "product_id": "0c1b388b-4b1b-4b79-a050-b097dc23a508"
       }
     ]
   }
@@ -178,53 +178,7 @@
     "gender": 0,
     "nickname": "tester",
     "role_id": "MANAGER",
-    "user_id": "a5f16be9-ae36-4380-aff0-b882648736b2"
-  }
-}
-```
-
-## 8 更新个人资料
-**请求**: 
-
-| 方法名 | 参数 | 描述 |
-| --- | --- | --- |
-| path | `/v1/profile/{user_id}` | - |
-| method | `PUT` | - |
-| body | `nickname` | 昵称 |
-| body | `gender` | 性别 |
-| body | `user_id` | 用户id |
-| body | `avatar` | 头像 |
-
-正确响应: 
-```json
-{
-  "ok": true,
-  "result": {}
-}
-```
-
-## 9 获取所有商家
-**请求**: 
-
-| 方法名 | 参数 | 描述 |
-| --- | --- | --- |
-| path | `/v1/profile/user/manager` | - |
-| method | `GET` | - |
-
-正确响应: 
-```json
-{
-  "ok": true,
-  "result": {
-    "managers": [
-      {
-        "avatar": "",
-        "gender": 0,
-        "nickname": "tester",
-        "role_id": "MANAGER",
-        "user_id": "ddab74cc-f3aa-48b4-b6b7-30ffed604e13"
-      }
-    ]
+    "user_id": "d90386ca-0000-4139-ba0a-f3d186a57acd"
   }
 }
 ```
