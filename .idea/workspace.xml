@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56930917-7e24-4d9b-85d0-e424468ce369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/models/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/models/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/models/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/account/test_account_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/account/test_account_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/product/test_product_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/product/test_product_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/profile/test_profile_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/profile/test_profile_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/profile/test_profile_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/profile/test_profile_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,16 +73,17 @@
         <counts>
           <entry key="Dockerfile" value="5" />
           <entry key="JSP" value="1" />
-          <entry key="Markdown" value="16" />
+          <entry key="Markdown" value="18" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Python" value="348" />
+          <entry key="Python" value="349" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="7883" />
+          <entry key="Python" value="7886" />
         </counts>
       </usages-collector>
     </session>
@@ -101,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/profile/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="260">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -111,25 +103,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/account/models/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/docs/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="338">
+                <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/product/models/product.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="26">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -152,23 +144,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/product/test_product_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="156">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/account/service.py">
+        <entry file="file://$PROJECT_DIR$/src/tests/product/test_product_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="133" selection-start-line="133" selection-end-line="133" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="338">
+              <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -217,7 +206,6 @@
       <list>
         <option value="$PROJECT_DIR$/.project_config/project_config.yaml" />
         <option value="$PROJECT_DIR$/src/requirements.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docker/docker-compose.yml" />
         <option value="$PROJECT_DIR$/docs/readme.md" />
         <option value="$PROJECT_DIR$/src/configs/travis_test.py" />
@@ -246,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/product/api.py" />
         <option value="$PROJECT_DIR$/src/libs/sanic_api/views.py" />
         <option value="$PROJECT_DIR$/src/libs/jwt/__init__.py" />
-        <option value="$PROJECT_DIR$/src/tests/product/test_product_service.py" />
         <option value="$PROJECT_DIR$/src/product/models/serializers.py" />
         <option value="$PROJECT_DIR$/src/account/router.py" />
         <option value="$PROJECT_DIR$/src/profile/models/serializers.py" />
@@ -258,11 +245,13 @@
         <option value="$PROJECT_DIR$/src/account/service.py" />
         <option value="$PROJECT_DIR$/src/account/models/serializers.py" />
         <option value="$PROJECT_DIR$/src/product/models/product.py" />
-        <option value="$PROJECT_DIR$/src/profile/service.py" />
         <option value="$PROJECT_DIR$/src/tests/account/test_account_api.py" />
         <option value="$PROJECT_DIR$/src/tests/profile/test_profile_service.py" />
         <option value="$PROJECT_DIR$/src/tests/profile/test_profile_api.py" />
         <option value="$PROJECT_DIR$/src/tests/product/test_product_api.py" />
+        <option value="$PROJECT_DIR$/src/tests/product/test_product_service.py" />
+        <option value="$PROJECT_DIR$/src/profile/service.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -307,52 +296,6 @@
               <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quick_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quick_shopping" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +438,7 @@
     <frame x="64" y="-11" width="1855" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2015461" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2015461" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -509,7 +452,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38101432" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38101432" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32899868" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -577,14 +520,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lint.sh" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-175" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -663,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/product/test_product_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3484">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/docs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -716,16 +644,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/profile/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="338">
-            <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/product/models/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -856,16 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/profile/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/account/router.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -903,8 +811,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/product/test_product_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="156">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/product/test_product_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profile/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="338">
+            <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="26">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
