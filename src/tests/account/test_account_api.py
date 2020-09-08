@@ -1,4 +1,3 @@
-import uuid
 from tests.docs import api_docs
 
 
@@ -41,8 +40,7 @@ class TestAccountApi:
 
         # 再次发送
         error_response = await client.post(
-            '/v1/account/send_code',
-            json={'account_id': '123456@qq.com'})
+            '/v1/account/send_code', json={'account_id': '123456@qq.com'})
 
         assert error_response.status == 200
         error_result = await error_response.json()

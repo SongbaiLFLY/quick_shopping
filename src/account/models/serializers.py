@@ -82,5 +82,3 @@ class RoleIdSerializer(Schema):
     """获取身份
     """
     role_id = fields.Str()
-
-

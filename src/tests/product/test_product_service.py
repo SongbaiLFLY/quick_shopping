@@ -2,7 +2,8 @@ import uuid
 
 
 class TestProductService:
-    async def _create_product(self, client, manager_id, name, price, description):
+    async def _create_product(self, client, manager_id,
+                              name, price, description):
         # 创建一个产品
         response = await client.post('/service/v1/product',
                                      json={
@@ -109,7 +110,8 @@ class TestProductService:
     async def test_delete_product(self, client):
         manager_id = str(uuid.uuid4())
         price = 1.1
-        product_id = await self._create_product(client, manager_id, '1', price, '1')
+        product_id = await self._create_product(client,
+                                                manager_id, '1', price, '1')
         await self._create_product(client, manager_id, '2', price, '2')
         await self._create_product(client, manager_id, '3', price, '3')
 
@@ -137,7 +139,8 @@ class TestProductService:
         manager_id = str(uuid.uuid4())
         price = 1.1
         price1 = 1.2
-        product_id = await self._create_product(client, manager_id, '1', price, '1')
+        product_id = await self._create_product(client,
+                                                manager_id, '1', price, '1')
         response = await client.put(f'/service/v1/product/{product_id}',
                                     json={
                                         'manager_id': manager_id,

@@ -4,8 +4,7 @@ from account.models.account import Account
 from profile.models.serializers import (CreateProfileSerializer,
                                         ProfileSerializer,
                                         UpdateProfileSerializer,
-                                        UserIdSerializer,
-                                        ManagerIdSerializer)
+                                        UserIdSerializer)
 
 from libs.sanic_api.views import GetView, PostView, PutView, ListView
 
@@ -70,6 +69,5 @@ class GetAllManagerService(ListView):
     list_result_name = 'managers'
 
     async def filter_objects(self):
-        managers = await Profile.objects.filter(
-            role_id='MANAGER').async_all()
+        managers = await Profile.objects.filter(role_id='MANAGER').async_all()
         return managers

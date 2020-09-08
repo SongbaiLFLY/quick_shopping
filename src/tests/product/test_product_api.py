@@ -5,7 +5,8 @@ from app import app
 
 
 class TestProductApi:
-    async def _create_product(self, client, authorization, name, price, description):
+    async def _create_product(self, client, authorization,
+                             name, price, description):
         # 创建一个产品
         response = await client.post(
             '/v1/product',

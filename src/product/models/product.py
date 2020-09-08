@@ -1,7 +1,6 @@
 import uuid
 from datetime import datetime
 
-
 from cassandra.cqlengine import columns
 
 from libs.aiocqlengine.models import AioModel
@@ -21,7 +20,7 @@ class Product(AioModel):
     updated_at = columns.DateTime(default=datetime.utcnow())
 
     @classmethod
-    async def new(cls, manager_id, name,price, description):
+    async def new(cls, manager_id, name, price, description):
         return await Product.async_create(manager_id=manager_id,
                                           product_id=str(uuid.uuid4()),
                                           name=name,

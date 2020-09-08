@@ -26,4 +26,3 @@ class SendCodeApi(SendCodeService):
 
 class GetRoleIdApi(GetRoleIdService):
     pass
-

@@ -1,9 +1,4 @@
-import uuid
-
-from tests.account.test_account_service import AccountService
 from tests.docs import api_docs
-
-from app import app
 
 
 class ProfileApi:
