@@ -1,5 +1,5 @@
 # server
-sanic==19.12.2
+sanic==20.12.6
 
 # unit test
 pytest-cov==2.5.1
