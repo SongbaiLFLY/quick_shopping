@@ -14,7 +14,7 @@ aiohttp==3.5.4  # aiohttp 的接口经常改, 锁定版本, 避免之后更新�
 click==6.7
 gunicorn==19.9.0
 marshmallow==3.2.1
-pyjwt==1.7
+pyjwt==2.4.0
 decorator==4.4.0
 retry==0.9.2
 pika==1.1.0
